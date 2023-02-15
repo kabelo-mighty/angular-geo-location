@@ -1,0 +1,9 @@
+<hello name="{{ name }}"></hello>
+<p>
+	Start editing to see some magic happen :)
+</p>
+
+<div *ngIf="location | async as loc">
+	lat: {{ loc.coords.latitude }} <br>
+  long: {{ loc.coords.longitude }}
+</div>
